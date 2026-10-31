@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <div class="announcement">Complimentary delivery on orders over $60 <span>•</span> Easy 14-day returns</div>
@@ -17,14 +17,15 @@
       <svg viewBox="0 0 52 52" aria-hidden="true"><path d="M26 5c1 9 8 12 13 18 8 10 1 23-13 23S5 33 13 23C18 17 25 14 26 5Z"/><path d="M26 16v25M26 29c-5-1-9-4-11-8M26 32c5-1 9-4 11-8"/></svg>
       <span>Aurelia<small>MODEST WEAR</small></span>
     </a>
-    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation" aria-hidden="false">
       <a href="#home">Home</a><a href="#shop">Shop</a><a href="#new">New arrivals</a><a href="#categories">Categories</a><a href="#story">Our story</a>
+      <div class="mobile-nav-extra"><p>New season edit</p><strong>Soft silhouettes.<br>Quiet confidence.</strong><a href="#shop">Explore the collection <span>→</span></a><small>Complimentary delivery over $60</small></div>
     </nav>
     <div class="header-actions">
       <button class="icon-btn" aria-label="Search" id="search-btn"><span>⌕</span></button>
       <button class="icon-btn" aria-label="Account"><span>♙</span></button>
       <button class="icon-btn cart-button" aria-label="Shopping bag" id="cart-btn"><span>◇</span><b id="cart-count">0</b></button>
-      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -117,6 +118,6 @@
     <div class="checkout-summary"><div class="summary-inner"><p class="eyebrow">Your order</p><h3>Order summary</h3><div id="checkout-items"></div><div class="summary-breakdown"><p><span>Subtotal</span><b id="checkout-subtotal">$0.00</b></p><p><span>Delivery</span><b id="checkout-delivery">Complimentary</b></p></div><div class="summary-total"><span>Total <small>before payment</small></span><strong id="checkout-total">$0.00</strong></div><div class="summary-perks"><span>↻ Easy 14-day returns</span><span>◇ Secure checkout</span></div></div></div>
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite">Added to your bag</div>
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
