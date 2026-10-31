@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <div class="announcement">Complimentary delivery on orders over $60 <span>•</span> Easy 14-day returns</div>
@@ -92,6 +92,25 @@
   </footer>
 
   <div class="search-panel" id="search-panel" aria-hidden="true"><button id="search-close" aria-label="Close search">×</button><p class="eyebrow">What are you looking for?</p><div><input type="search" id="search-input" placeholder="Search dresses, sets, layers…"><span>⌕</span></div><small>Popular: <a href="#shop">linen sets</a> · <a href="#shop">maxi dresses</a> · <a href="#shop">new arrivals</a></small></div>
+
+  <section class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-product-name">
+    <button class="product-modal-close" id="product-modal-close" aria-label="Close product details">×</button>
+    <div class="product-modal-gallery"><img id="modal-product-image" src="" alt=""><span id="modal-product-badge">Aurelia edit</span><button class="modal-wish" id="modal-wish" aria-label="Save product">♡</button></div>
+    <div class="product-modal-content">
+      <div class="modal-breadcrumb"><span>Collection</span><b>·</b><span id="modal-product-kind">Dresses</span></div>
+      <h2 id="modal-product-name">Product name</h2>
+      <div class="modal-rating"><span id="modal-product-rating">★★★★★</span><a href="#modal-product-notes">4.9 · 128 reviews</a></div>
+      <div class="modal-price"><strong id="modal-product-price">$0.00</strong><small>Taxes included</small></div>
+      <p class="modal-description" id="modal-product-description">A graceful everyday piece with a considered silhouette and beautiful movement.</p>
+      <div class="modal-colour"><span>Colour</span><b>Olive</b><i aria-label="Olive colour"></i></div>
+      <div class="modal-option-head"><span>Select size</span><button type="button">Size guide ↗</button></div>
+      <div class="modal-sizes" id="modal-sizes"><button type="button" data-size="XS">XS</button><button type="button" data-size="S">S</button><button type="button" class="active" data-size="M">M</button><button type="button" data-size="L">L</button><button type="button" data-size="XL">XL</button></div>
+      <div class="modal-purchase"><div class="modal-quantity"><button type="button" id="modal-qty-minus" aria-label="Decrease quantity">−</button><span id="modal-qty">1</span><button type="button" id="modal-qty-plus" aria-label="Increase quantity">+</button></div><button class="btn primary modal-add" id="modal-add"><span>Add to bag</span><b id="modal-add-price">$0.00</b></button></div>
+      <p class="modal-stock"><i></i> In stock — ready to dispatch</p>
+      <div class="modal-details" id="modal-product-notes"><details open><summary>Details & fit <span>+</span></summary><p>Relaxed, modest fit with an elegant drape. Designed for comfortable movement and effortless layering.</p></details><details><summary>Delivery & returns <span>+</span></summary><p>Complimentary delivery over $60. Easy returns within 14 days of delivery.</p></details><details><summary>Care <span>+</span></summary><p>Gentle cold wash. Steam lightly and hang to preserve the silhouette.</p></details></div>
+      <div class="modal-perks"><span>◇ Secure checkout</span><span>↻ Easy returns</span><span>✦ Considered quality</span></div>
+    </div>
+  </section>
   <div class="page-overlay" id="page-overlay"></div>
   <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping bag">
     <div class="cart-head"><div><p class="eyebrow">Your selection</p><h2>Shopping bag <span id="cart-title-count">(0)</span></h2></div><button class="drawer-close" id="cart-close" aria-label="Close shopping bag">×</button></div>
@@ -118,6 +137,6 @@
     <div class="checkout-summary"><div class="summary-inner"><p class="eyebrow">Your order</p><h3>Order summary</h3><div id="checkout-items"></div><div class="summary-breakdown"><p><span>Subtotal</span><b id="checkout-subtotal">$0.00</b></p><p><span>Delivery</span><b id="checkout-delivery">Complimentary</b></p></div><div class="summary-total"><span>Total <small>before payment</small></span><strong id="checkout-total">$0.00</strong></div><div class="summary-perks"><span>↻ Easy 14-day returns</span><span>◇ Secure checkout</span></div></div></div>
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite">Added to your bag</div>
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
