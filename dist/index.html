@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <div class="announcement">Complimentary delivery on orders over $60 <span>•</span> Easy 14-day returns</div>
@@ -101,18 +101,22 @@
   </aside>
   <section class="checkout-modal" id="checkout-modal" aria-hidden="true" aria-label="Checkout details">
     <button class="checkout-close" id="checkout-close" aria-label="Close checkout">×</button>
-    <div class="checkout-form-wrap"><p class="eyebrow">Secure checkout</p><h2>Delivery details</h2><p class="checkout-intro">Complete your delivery information. Payment is intentionally disabled in this demo.</p>
+    <div class="checkout-form-wrap">
+      <div class="checkout-brand"><span class="mini-mark">A</span><div><b>Aurelia</b><small>SECURE CHECKOUT</small></div><span class="secure-note">◇ Encrypted & secure</span></div>
+      <div class="checkout-step"><span class="active">1</span><i></i><span>2</span><p>Delivery</p><p>Review</p></div>
+      <p class="eyebrow">Where should we send it?</p><h2>Delivery details</h2><p class="checkout-intro">Tell us where your order is going. You can review everything before the payment step.</p>
       <form id="checkout-form">
-        <fieldset><legend>Contact</legend><label>Email address<input type="email" name="email" placeholder="you@example.com" required></label><label>Phone number<input type="tel" name="phone" placeholder="+880 1XXX XXXXXX" required></label></fieldset>
-        <fieldset><legend>Shipping address</legend><div class="field-row"><label>First name<input name="firstName" required></label><label>Last name<input name="lastName" required></label></div><label>Address<input name="address" placeholder="Street and house number" required></label><div class="field-row"><label>City<input name="city" required></label><label>Postcode<input name="postcode" required></label></div></fieldset>
-        <fieldset><legend>Delivery</legend><label class="delivery-option"><input type="radio" name="delivery" value="Standard" checked><span><b>Standard delivery</b><small>3–5 business days</small></span><strong>Free</strong></label><label class="delivery-option"><input type="radio" name="delivery" value="Express"><span><b>Express delivery</b><small>1–2 business days</small></span><strong>$12</strong></label></fieldset>
-        <button class="btn primary checkout-submit" type="submit">Review delivery details <span>→</span></button>
+        <fieldset><legend><span>01</span> Contact information</legend><div class="field-row"><label><span>Email address</span><input type="email" name="email" placeholder="you@example.com" required></label><label><span>Phone number</span><input type="tel" name="phone" placeholder="+880 1XXX XXXXXX" required></label></div></fieldset>
+        <fieldset><legend><span>02</span> Shipping address</legend><div class="field-row"><label><span>First name</span><input name="firstName" placeholder="First name" required></label><label><span>Last name</span><input name="lastName" placeholder="Last name" required></label></div><label><span>Street address</span><input name="address" placeholder="House number and street name" required></label><div class="field-row"><label><span>City</span><input name="city" placeholder="Dhaka" required></label><label><span>Postcode</span><input name="postcode" placeholder="1205" required></label></div><label><span>Country / region</span><select name="country"><option>Bangladesh</option><option>United Kingdom</option><option>United States</option></select></label></fieldset>
+        <fieldset><legend><span>03</span> Choose delivery</legend><div class="delivery-grid"><label class="delivery-option"><input type="radio" name="delivery" value="Standard" checked><i></i><span><b>Standard</b><small>3–5 business days</small></span><strong>Complimentary</strong></label><label class="delivery-option"><input type="radio" name="delivery" value="Express"><i></i><span><b>Express</b><small>1–2 business days</small></span><strong>$12.00</strong></label></div></fieldset>
+        <button class="btn primary checkout-submit" type="submit"><span>Review your order</span><b>Continue →</b></button>
+        <p class="checkout-help">Need help? <a href="mailto:hello@aurelia-demo.com">Chat with our style team</a></p>
       </form>
       <div class="checkout-success" id="checkout-success"><span>✓</span><h3>Details saved</h3><p>Your cart and delivery information are ready. Payment processing is not included in this demo.</p><button class="btn primary" id="back-to-shop">Back to store</button></div>
     </div>
-    <div class="checkout-summary"><p class="eyebrow">Order summary</p><div id="checkout-items"></div><div class="summary-total"><span>Total before payment</span><strong id="checkout-total">$0.00</strong></div></div>
+    <div class="checkout-summary"><div class="summary-inner"><p class="eyebrow">Your order</p><h3>Order summary</h3><div id="checkout-items"></div><div class="summary-breakdown"><p><span>Subtotal</span><b id="checkout-subtotal">$0.00</b></p><p><span>Delivery</span><b id="checkout-delivery">Complimentary</b></p></div><div class="summary-total"><span>Total <small>before payment</small></span><strong id="checkout-total">$0.00</strong></div><div class="summary-perks"><span>↻ Easy 14-day returns</span><span>◇ Secure checkout</span></div></div></div>
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite">Added to your bag</div>
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

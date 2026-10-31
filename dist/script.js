@@ -63,7 +63,12 @@ function renderCheckout() {
   $('#checkout-items').innerHTML = cart.map(item => `<div class="checkout-summary-item"><img src="${item.image}" alt=""><div><h4>${item.name}</h4><small>Qty ${item.quantity}</small></div><strong>${money(item.price * item.quantity)}</strong></div>`).join('');
   updateCheckoutTotal();
 }
-function updateCheckoutTotal() { const express = $('input[name="delivery"]:checked')?.value === 'Express'; $('#checkout-total').textContent = money(subtotal() + (express ? 12 : 0)); }
+function updateCheckoutTotal() {
+  const express = $('input[name="delivery"]:checked')?.value === 'Express';
+  $('#checkout-subtotal').textContent = money(subtotal());
+  $('#checkout-delivery').textContent = express ? '$12.00' : 'Complimentary';
+  $('#checkout-total').textContent = money(subtotal() + (express ? 12 : 0));
+}
 $$('input[name="delivery"]').forEach(option => option.addEventListener('change', updateCheckoutTotal));
 $('#checkout-btn').addEventListener('click', () => {
   closeCart(); renderCheckout();
