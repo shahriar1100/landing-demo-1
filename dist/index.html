@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aurelia — a refined, modest fashion storefront for everyday elegance.">
+  <title>Aurelia — Modest Fashion, Modern Spirit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Complimentary delivery on orders over $60 <span>•</span> Easy 14-day returns</div>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Aurelia home">
+      <svg viewBox="0 0 52 52" aria-hidden="true"><path d="M26 5c1 9 8 12 13 18 8 10 1 23-13 23S5 33 13 23C18 17 25 14 26 5Z"/><path d="M26 16v25M26 29c-5-1-9-4-11-8M26 32c5-1 9-4 11-8"/></svg>
+      <span>Aurelia<small>MODEST WEAR</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#new">New arrivals</a><a href="#categories">Categories</a><a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Search" id="search-btn"><span>⌕</span></button>
+      <button class="icon-btn" aria-label="Account"><span>♙</span></button>
+      <button class="icon-btn cart-button" aria-label="Shopping bag" id="cart-btn"><span>◇</span><b id="cart-count">0</b></button>
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Thoughtfully made. Effortlessly yours.</p>
+        <h1>Modest style,<br><em>beautifully</em> reimagined.</h1>
+        <p>Timeless silhouettes and natural textures, designed to move with you from quiet mornings to memorable evenings.</p>
+        <div class="button-row"><a class="btn primary" href="#shop">Explore collection <span>→</span></a><a class="text-link" href="#story">Our philosophy</a></div>
+        <div class="hero-trust"><span>✦ Natural fabrics</span><span>↻ Easy returns</span><span>♢ Secure checkout</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=85" alt="Woman wearing an elegant flowing dress" fetchpriority="high">
+        <div class="hero-note"><span>New edit</span><strong>Soft tailoring</strong><a href="#new">Discover →</a></div>
+        <p class="vertical-note">AURELIA · SPRING / SUMMER 2026</p>
+      </div>
+    </section>
+
+    <section class="section categories" id="categories">
+      <div class="section-heading reveal"><div><p class="eyebrow">Curated for every chapter</p><h2>Shop by category</h2></div><a class="text-link" href="#shop">View all pieces →</a></div>
+      <div class="category-grid">
+        <a class="category-card large reveal" href="#shop"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=85" alt="Elegant flowing dresses"><div><span>01</span><h3>Occasion dresses</h3><p>Quiet drama, graceful movement</p></div></a>
+        <a class="category-card reveal" href="#shop"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85" alt="Modern coordinated clothing"><div><span>02</span><h3>Everyday sets</h3><p>Polished ease for every day</p></div></a>
+        <a class="category-card reveal" href="#shop"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="Soft essential clothing"><div><span>03</span><h3>Soft essentials</h3><p>Foundations you'll live in</p></div></a>
+      </div>
+    </section>
+
+    <section class="section collection" id="shop">
+      <div class="section-heading centered reveal"><div><p class="eyebrow">The pieces everyone loves</p><h2>Our bestsellers</h2></div><div class="filter-pills" role="group" aria-label="Filter products"><button class="active" data-filter="all">All</button><button data-filter="dress">Dresses</button><button data-filter="set">Sets</button><button data-filter="layer">Layers</button></div></div>
+      <div class="product-grid">
+        <article class="product-card reveal" data-type="dress"><div class="product-image"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=85" alt="Sage maxi dress"><span class="tag">Bestseller</span><button class="wish" aria-label="Add Sage Reverie Dress to wishlist">♡</button><button class="quick-add">Quick add</button></div><p class="product-kind">Dresses</p><h3>Sage Reverie Dress</h3><div class="price"><strong>$84</strong><span>★ 4.9 <small>(128)</small></span></div></article>
+        <article class="product-card reveal" data-type="set"><div class="product-image"><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=85" alt="Neutral linen set"><span class="tag soft">New</span><button class="wish" aria-label="Add Sienna Linen Set to wishlist">♡</button><button class="quick-add">Quick add</button></div><p class="product-kind">Co-ords</p><h3>Sienna Linen Set</h3><div class="price"><strong>$92</strong><span>★ 4.8 <small>(76)</small></span></div></article>
+        <article class="product-card reveal" data-type="layer"><div class="product-image"><img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?auto=format&fit=crop&w=700&q=85" alt="Warm olive outer layer"><button class="wish" aria-label="Add Olive Duster Coat to wishlist">♡</button><button class="quick-add">Quick add</button></div><p class="product-kind">Layers</p><h3>Olive Duster Coat</h3><div class="price"><strong>$108</strong><span>★ 4.7 <small>(54)</small></span></div></article>
+        <article class="product-card reveal" data-type="dress"><div class="product-image"><img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=700&q=85" alt="Floral relaxed dress"><span class="tag sale">−20%</span><button class="wish" aria-label="Add Meadow Maxi Dress to wishlist">♡</button><button class="quick-add">Quick add</button></div><p class="product-kind">Dresses</p><h3>Meadow Maxi Dress</h3><div class="price"><strong>$76</strong><del>$95</del><span>★ 4.9 <small>(203)</small></span></div></article>
+      </div>
+    </section>
+
+    <section class="editorial" id="new">
+      <div class="editorial-image reveal"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85" alt="Curated neutral clothing rail"></div>
+      <div class="editorial-copy reveal"><p class="script">The seasonal edit</p><h2>New season.<br>New softness.</h2><p>Sun-washed colours, breathable layers and considered details—an edit made for longer, lighter days.</p><a class="btn light" href="#shop">Shop new arrivals <span>→</span></a><span class="offer">UP TO <b>30%</b> OFF SELECTED PIECES</span></div>
+    </section>
+
+    <section class="section story" id="story">
+      <div class="story-copy reveal"><p class="eyebrow">Why Aurelia</p><h2>Clothes with a quieter kind of confidence.</h2><p>We believe getting dressed should feel easy, expressive and entirely your own. Each collection pairs thoughtful coverage with beautiful proportion, so modesty never means compromise.</p><a class="text-link" href="#values">Read our story →</a></div>
+      <div class="values" id="values">
+        <article class="reveal"><span>01</span><h3>Considered quality</h3><p>Natural-feel fabrics, lasting finishes and careful construction.</p></article>
+        <article class="reveal"><span>02</span><h3>Designed for real life</h3><p>Versatile silhouettes that layer, move and repeat beautifully.</p></article>
+        <article class="reveal"><span>03</span><h3>Personal service</h3><p>Warm, helpful guidance before and after every order.</p></article>
+      </div>
+    </section>
+
+    <section class="quote reveal" aria-label="Customer note"><p class="eyebrow">Notes from our community</p><blockquote>“The kind of dress you reach for again and again—beautifully cut, comfortable, and even lovelier in person.”</blockquote><div class="quote-author"><span>SR</span><div><strong>Samira R.</strong><small>Verified customer · ★★★★★</small></div></div></section>
+
+    <section class="newsletter reveal">
+      <div><p class="eyebrow">A little beauty, delivered</p><h2>Join the Aurelia list</h2><p>Early access, considered styling notes and 10% off your first order.</p></div>
+      <form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button class="btn primary" type="submit">Join us <span>→</span></button><small id="form-message">By subscribing, you agree to our privacy policy.</small></form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main"><div class="footer-brand"><a class="brand inverse" href="#home"><svg viewBox="0 0 52 52"><path d="M26 5c1 9 8 12 13 18 8 10 1 23-13 23S5 33 13 23C18 17 25 14 26 5Z"/><path d="M26 16v25M26 29c-5-1-9-4-11-8M26 32c5-1 9-4 11-8"/></svg><span>Aurelia<small>MODEST WEAR</small></span></a><p>Thoughtful clothing for a beautifully lived life.</p><div class="socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="Pinterest">p</a><a href="#" aria-label="Facebook">f</a></div></div><div><h3>Explore</h3><a href="#new">New arrivals</a><a href="#shop">Bestsellers</a><a href="#categories">Categories</a><a href="#story">Our story</a></div><div><h3>Help</h3><a href="#">Size guide</a><a href="#">Delivery & returns</a><a href="#">Care guide</a><a href="#">Contact</a></div><div><h3>Visit us</h3><p>Online, always open<br>Dhaka, Bangladesh</p><p>hello@aurelia-demo.com<br>+880 1700 000 000</p></div></div>
+    <div class="footer-bottom"><span>© 2026 Aurelia. Demo storefront.</span><span>Privacy · Terms · Accessibility</span></div>
+  </footer>
+
+  <div class="search-panel" id="search-panel" aria-hidden="true"><button id="search-close" aria-label="Close search">×</button><p class="eyebrow">What are you looking for?</p><div><input type="search" id="search-input" placeholder="Search dresses, sets, layers…"><span>⌕</span></div><small>Popular: <a href="#shop">linen sets</a> · <a href="#shop">maxi dresses</a> · <a href="#shop">new arrivals</a></small></div>
+  <div class="page-overlay" id="page-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="cart-head"><div><p class="eyebrow">Your selection</p><h2>Shopping bag <span id="cart-title-count">(0)</span></h2></div><button class="drawer-close" id="cart-close" aria-label="Close shopping bag">×</button></div>
+    <div class="delivery-progress"><div><span id="delivery-text">Add $60 for complimentary delivery</span><b id="delivery-percent">0%</b></div><i><span id="delivery-bar"></span></i></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>◇</span><h3>Your bag is waiting</h3><p>Discover thoughtful pieces made for everyday elegance.</p><button class="btn primary" id="empty-shop">Explore collection <span>→</span></button></div>
+    <div class="cart-footer" id="cart-footer"><div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div><p>Taxes calculated at checkout. Delivery is complimentary over $60.</p><button class="btn primary checkout-btn" id="checkout-btn">Continue to checkout <span>→</span></button><button class="keep-shopping" id="keep-shopping">Keep shopping</button></div>
+  </aside>
+  <section class="checkout-modal" id="checkout-modal" aria-hidden="true" aria-label="Checkout details">
+    <button class="checkout-close" id="checkout-close" aria-label="Close checkout">×</button>
+    <div class="checkout-form-wrap"><p class="eyebrow">Secure checkout</p><h2>Delivery details</h2><p class="checkout-intro">Complete your delivery information. Payment is intentionally disabled in this demo.</p>
+      <form id="checkout-form">
+        <fieldset><legend>Contact</legend><label>Email address<input type="email" name="email" placeholder="you@example.com" required></label><label>Phone number<input type="tel" name="phone" placeholder="+880 1XXX XXXXXX" required></label></fieldset>
+        <fieldset><legend>Shipping address</legend><div class="field-row"><label>First name<input name="firstName" required></label><label>Last name<input name="lastName" required></label></div><label>Address<input name="address" placeholder="Street and house number" required></label><div class="field-row"><label>City<input name="city" required></label><label>Postcode<input name="postcode" required></label></div></fieldset>
+        <fieldset><legend>Delivery</legend><label class="delivery-option"><input type="radio" name="delivery" value="Standard" checked><span><b>Standard delivery</b><small>3–5 business days</small></span><strong>Free</strong></label><label class="delivery-option"><input type="radio" name="delivery" value="Express"><span><b>Express delivery</b><small>1–2 business days</small></span><strong>$12</strong></label></fieldset>
+        <button class="btn primary checkout-submit" type="submit">Review delivery details <span>→</span></button>
+      </form>
+      <div class="checkout-success" id="checkout-success"><span>✓</span><h3>Details saved</h3><p>Your cart and delivery information are ready. Payment processing is not included in this demo.</p><button class="btn primary" id="back-to-shop">Back to store</button></div>
+    </div>
+    <div class="checkout-summary"><p class="eyebrow">Order summary</p><div id="checkout-items"></div><div class="summary-total"><span>Total before payment</span><strong id="checkout-total">$0.00</strong></div></div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite">Added to your bag</div>
+  <script src="script.js"></script>
+</body>
+</html>
